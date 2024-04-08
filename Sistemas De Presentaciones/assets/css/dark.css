@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.Modal_Pgx{
+    color: #fff;
+    display: none;
+    position: fixed;
+    /* padding: 10px; */
+    font-family: 'Courier New', Courier, monospace;
+    background: #222222;
+    border: 1px solid #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 20;
+}
+
+#dibujos{
+    width: 100%;
+    height: 100vh;
+}
+

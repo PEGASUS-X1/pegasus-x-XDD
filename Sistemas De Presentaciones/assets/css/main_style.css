@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #222222;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    display: none;
+    background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: red;
+}
+
+img {
+    max-width: 100%;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: none;
+}
+
+
+.slide.activo {
+    display: block;
+    position: relative;
+    animation: 1s;
+    animation-fill-mode: forwards;
+}
+
+.slide img {
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.controladores {
+    position: absolute;
+    bottom: 7%;
+    left: 1%;
+    z-index: 10;
+}
+
+.controladores span {
+    font-size: 20px;
+    position: relative;
+    display: block;
+    margin: 5px;
+    cursor: pointer;
+    text-align: center;
+    background: #0000009d;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1;
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+}
+
+.hover{
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    z-index: 111;
+    position: fixed;
+}
+
+.barras{
+    top: 1px;
+    right: 0;
+    font-size: 20px;
+    position: absolute;
+    display: block;
+    margin: 5px;
+    cursor: pointer;
+    text-align: center;
+    background: #0000009d;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1;
+    cursor: pointer;
+    z-index: 15;
+    position: fixed;
+}
+
+.bat{
+    top: 1px;
+    right: 0;
+    font-size: 20px;
+    position: absolute;
+    display: block;
+    margin: 5px;
+    cursor: pointer;
+    text-align: center;
+    background: #0000009d;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1;
+    cursor: pointer;
+    z-index: 15;
+    position: fixed;
+    color: #fff;
+}
+
+
+
+.Herramientas {
+    display: none;
+    position: absolute;
+    background: #0000009d;
+    width: 35px;
+    bottom: 0;
+    left: 105%;
+    height: auto;
+    padding: 5px;
+}
+
+.Herramientas button {
+    cursor: pointer;
+    margin-bottom: 10px;
+    background: #00000000;
+    color: #fff;
+    font-size: 17px;
+    border: none;
+    width: 100%;
+    line-height: 30px;
+}
+
+
+
+.Presentacion{
+    transition: 5s;
+    background: #000000;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    position: absolute;
+}
+
+.Presentacion .parte1{
+    position: absolute;
+    transition: 5s;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.Presentacion .parte2{
+    position: absolute;
+    transition: 5s;
+    width: 50%;
+    height: 100%;
+    right: 0;
+    top: 0;
+}
+.Presentacion.preac{
+    transition: 5s;
+    background: #00000000;
+}
+.Presentacion.preac .parte1{
+    display: block;
+    position: absolute;
+    transition: 5s;
+    width: 0%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.Presentacion.preac .parte2{
+    display: block;
+    position: absolute;
+    transition: 5s;
+    width: 0%;
+    height: 100%;
+    right: 0;
+    top: 0;
+}
+
+
+.loader{
+    transition: 5s;
+}
+
+#loader {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#loaderr{
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.loader-circle {
+    text-align: center;
+    border: 8px solid #494949;
+    border-top: 8px solid #800000;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#loader .logo_presentacion {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loaderr .logo_presentacion {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn_silde{
+    position: absolute;
+    bottom: 10px;
+    z-index: 10;
+    left: 10px;
+    font-size: 17px;
+    color: #fff;
+    padding: 5px;
+    border: 1px solid #fff;
+    background: transparent;
+}
